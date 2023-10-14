@@ -26,13 +26,21 @@ Referência: FILHO, Mario. **As Métricas Mais Populares para Avaliar Modelos de
 ## Algoritmo Random Forest
 Foram realizadas as seguintes etapas:
 1. **Matriz de correlação:** Inicialmente foi gerada uma matriz de correlação para verificar a correlação das features com a classe target.
-2. **Feature Selection:** Após a visualização de matriz de correlação, foi feito o drop (remoção) das features importantes como id (index) e CLASS_LABEL (target), que caso ficassem ocasionaria um overfitting (sobreajuste) do treino. A feature 'HttpsInHostname' também sofreu drop por não ter correlação com os dados, já que tem o mesmo valor de campo em todas as linhas (todas as observações estão com valor 0).
+2. **Feature Selection:** Após a visualização de matriz de correlação, foi feito o drop (remoção) das features importantes como id (index) e CLASS_LABEL (target), que caso ficassem ocasionaria um overfitting (sobreajuste) do treino. A feature HttpsInHostname também sofreu drop por não ter correlação com os dados, já que tem o mesmo valor de campo em todas as linhas (todas as observações estão com valor 0).
 3. **Divisão dos dados:** foi feita a divisão dos dados em 80% para treino e 20% para teste.
 4. **Feature Scaling:** realizado com objetivo de padronizar os dados utilizando o método StandardScaler.
 5. **Treinamento do modelo**.
 6. **Avaliação do desempenho** 
 ### Resultados
 ![RF](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/8abfbf47-d49b-4d50-a67e-16b70a35eebf)
+
+## Algoritmo Decision Tree
+Foram realizadas as seguintes etapas:
+1. **Matriz de correlação:** Inicialmente foi gerada uma matriz de correlação para verificar a correlação das features com a classe target.
+2. **Feature Selection:** Através da análise da matriz de correlação, foram removidas as features id, HttpsInHostname e CLASS_LABEL, pelos mesmos motivos apresentados na etapa do Random Forest. Além disso, como o modelo será feito por Decision Tree, a Feature Selection será feita utilizando os valores da matriz de correlação. Portanto, a partir da correlação entre a CLASS_LABEL (target) e todas as outras features, foram removidas as features com a correlação mais fraca com o target.
+3. **Divisão dos dados:** foi feita a divisão dos dados em 80% para treino e 20% para teste.
+4. **Treinamento do modelo**.
+5. **Avaliação do desempenho**
 
 
 
