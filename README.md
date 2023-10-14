@@ -32,20 +32,20 @@ Foram realizadas as seguintes etapas:
 5. **Treinamento do modelo**.
 6. **Avaliação do desempenho** 
 ### Resultados
-
+![RF](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/dfcfc3bb-93e1-4b3b-933f-3d1d1d147f42)
 
 ## Algoritmo Decision Tree
 Foram realizadas as seguintes etapas:
 1. **Matriz de correlação:** Inicialmente foi gerada uma matriz de correlação para verificar a correlação das features com a classe target.
 2. **Feature Selection:** Através da análise da matriz de correlação, foram removidas as features id, HttpsInHostname e CLASS_LABEL, pelos mesmos motivos apresentados na etapa do Random Forest. Além disso, como o modelo será feito por Decision Tree, a Feature Selection será feita utilizando os valores da matriz de correlação. Portanto, a partir da correlação entre a CLASS_LABEL (target) e todas as outras features, foram removidas as features com a correlação mais fraca com o target.
 3. **Divisão dos dados:** foi feita a divisão dos dados em 80% para treino e 20% para teste.
-4. **Treinamento do modelo**.
-5. **Plotagem da Decision Tree**: A Árvore de Decisão foi plotada com uma profundidade máxima igual a 3.
-
-6. **Learning Curve:** Feito todo o processo de criação da Learning Curve para para verificar se há ou não overfitting do treinamento do modelo, inclusive a ordenação dos índices do dataset, afim de verificar de forma decrescente as features mais importantes para o treino. Para a função da Learning Curve foi utilizado o f1_score por motivo da Decision Tree ser de classificação. Dessa forma, foi acompanhado todo o processo do f1_score a partir do aumento de uso de features no treinamento e no teste, a fim de verificar se há ou não overfitting do modelo. Por fim foi verificado que não existe overfitting no modelo.
+4. **Feature Scaling:** realizado com objetivo de padronizar os dados utilizando o método StandardScaler.
+5. **Treinamento do modelo**.
+6. **Plotagem da Decision Tree**: A Árvore de Decisão foi plotada com uma profundidade máxima igual a 3.
+![DT_plot](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/d7bf120a-1f6a-4d85-b95a-4f539e872d74)
 
   
-7. **Avaliação do desempenho**
+8. **Avaliação do desempenho**
 
 ### Resultados
 
