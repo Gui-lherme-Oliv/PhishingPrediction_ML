@@ -14,7 +14,14 @@ Foi verificado o seguinte:
 - Como o objetivo é identificar se é phishing ou não, a métrica de avaliação se dará por classificação.
 - O dataset está bastante balanceado: 50% das observações do tipo phishing e 50% do tipo legítimo.
 
-Serão utilizados e comparados dois algoritmos: **Random Forest** e **Decision Tree**.
+Foram utilizados e comparados dois algoritmos: **Random Forest** e **Decision Tree**. Para ambos os modelos gerados foram utilizadas as seguintes métricas de avaliação de desempenho:
+- Precision: Número de exemplos classificados como pertencentes a uma classe, que realmente são daquela classe (positivos verdadeiros), dividido pela soma entre este número, e o número de exemplos classificados nesta classe, mas que pertencem a outras (falsos positivos).
+- Recall: Número de exemplos classificados como pertencentes a uma classe, que realmente são daquela classe, dividido pela quantidade total de exemplos que pertencem a esta classe, mesmo que sejam classificados em outra. No caso binário, positivos verdadeiros divididos por total de positivos.
+- F1-Score: é uma média harmônica entre precisão e recall.
+- Accuracy: É o número de acertos (positivos) divido pelo número total de exemplos.
+- Support: O support não é uma métrica de desempenho, mas sim uma contagem das instâncias de cada classe no conjunto de dados.
+
+Referência: FILHO, Mario. **As Métricas Mais Populares para Avaliar Modelos de Machine Learning**. 2018. Disponível em: https://mariofilho.com/as-metricas-mais-populares-para-avaliar-modelos-de-machine-learning/
 
 ## Algoritmo Random Forest
 Foram realizadas as seguintes etapas:
@@ -22,7 +29,13 @@ Foram realizadas as seguintes etapas:
 2. **Feature Selection:** Após a visualização de matriz de correlação, foi feito o drop (remoção) das features importantes como id (index) e CLASS_LABEL (target), que caso ficassem ocasionaria um overfitting (sobreajuste) do treino. A feature 'HttpsInHostname' também sofreu drop por não ter correlação com os dados, já que tem o mesmo valor de campo em todas as linhas (todas as observações estão com valor 0).
 3. **Divisão dos dados:** foi feita a divisão dos dados em 80% para treino e 20% para teste.
 4. **Feature Scaling:** realizado com objetivo de padronizar os dados utilizando o método StandardScaler.
-5. Realizado o treinamento do modelo. Após o treinamento foi realizada a avaliação do desempenho do modelo com as seguintes métricas: Precision, Recall, F1-Score e Support.
+5. **Treinamento do modelo**.
+6. **Avaliação do desempenho:** Após o treinamento foi realizada a avaliação do desempenho do modelo com as seguintes métricas: Precision, Recall, F1-Score e Support.
+
+### Resultados
+![aa](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/3ed2b93e-cc58-41a7-a18d-a44959fc51ed)
+
+
 
 
 
