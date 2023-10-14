@@ -32,7 +32,7 @@ Foram realizadas as seguintes etapas:
 5. **Treinamento do modelo**.
 6. **Avaliação do desempenho** 
 ### Resultados
-![RF](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/8abfbf47-d49b-4d50-a67e-16b70a35eebf)
+
 
 ## Algoritmo Decision Tree
 Foram realizadas as seguintes etapas:
@@ -41,7 +41,7 @@ Foram realizadas as seguintes etapas:
 3. **Divisão dos dados:** foi feita a divisão dos dados em 80% para treino e 20% para teste.
 4. **Treinamento do modelo**.
 5. **Plotagem da Decision Tree**: A Árvore de Decisão foi plotada com uma profundidade máxima igual a 3.
-![DT_plot](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/5ab66015-2a70-4825-8730-5c8a65fba738)
+
 6. **Learning Curve:** Feito todo o processo de criação da Learning Curve para para verificar se há ou não overfitting do treinamento do modelo, inclusive a ordenação dos índices do dataset, afim de verificar de forma decrescente as features mais importantes para o treino. Para a função da Learning Curve foi utilizado o f1_score por motivo da Decision Tree ser de classificação. Dessa forma, foi acompanhado todo o processo do f1_score a partir do aumento de uso de features no treinamento e no teste, a fim de verificar se há ou não overfitting do modelo. Por fim foi verificado que não existe overfitting no modelo.
 
   
