@@ -30,10 +30,10 @@ Foram realizadas as seguintes etapas:
 3. **Divisão dos dados:** foi feita a divisão dos dados em 80% para treino e 20% para teste.
 4. **Feature Scaling:** realizado com objetivo de padronizar os dados utilizando o método StandardScaler.
 5. **Treinamento do modelo**.
-6. **Avaliação do desempenho:** Após o treinamento foi realizada a avaliação do desempenho do modelo com as seguintes métricas: Precision, Recall, F1-Score e Support.
-
+6. **Avaliação do desempenho** 
 ### Resultados
-![aa](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/3ed2b93e-cc58-41a7-a18d-a44959fc51ed)
+![RF](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/8abfbf47-d49b-4d50-a67e-16b70a35eebf)
+
 
 
 
