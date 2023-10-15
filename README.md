@@ -14,6 +14,15 @@ Foi verificado o seguinte:
 - Como o objetivo é identificar se é phishing ou não, a métrica de avaliação se dará por classificação.
 - O dataset está bastante balanceado: 50% das observações do tipo phishing e 50% do tipo legítimo.
 
+### 2.1. Feature selection
+Foi selecionado o método SelectKBest que seleciona as melhores "K" características com base em uma métrica específica, que nesse caso foi escolhida a função f_classif que é adequada quando os dados são numéricos e a variável alvo é categórica. Foram usadas um total de 30 features.
+Não foi utilizada a matriz de correlação pois em casos onde há um relacionamento não-linear, a matriz geralmente não é uma boa medida.
+
+### 2.2. Divisão dos dados
+Foi definido 80% para treinamento e 20% para teste.
+
+## 3. Escolha do algoritmo
+
 Foram utilizados e comparados dois algoritmos: **Random Forest** e **Decision Tree**. Para ambos os modelos gerados foram utilizadas as seguintes métricas de avaliação de desempenho:
 - Precision: Número de exemplos classificados como pertencentes a uma classe, que realmente são daquela classe (positivos verdadeiros), dividido pela soma entre este número, e o número de exemplos classificados nesta classe, mas que pertencem a outras (falsos positivos).
 - Recall: Número de exemplos classificados como pertencentes a uma classe, que realmente são daquela classe, dividido pela quantidade total de exemplos que pertencem a esta classe, mesmo que sejam classificados em outra. No caso binário, positivos verdadeiros divididos por total de positivos.
@@ -24,8 +33,7 @@ Foram utilizados e comparados dois algoritmos: **Random Forest** e **Decision Tr
 Referência: FILHO, Mario. **As Métricas Mais Populares para Avaliar Modelos de Machine Learning**. 2018. Disponível em: https://mariofilho.com/as-metricas-mais-populares-para-avaliar-modelos-de-machine-learning/
 
 Obs.: Para Random Forest e Decision Trees, geralmente, não é necessário aplicar um método de padronização (normalização/escalonamento) aos recursos. Ambos os algoritmos são invariantes à escala dos recursos, o que significa que a mudança na escala dos atributos não afeta seu desempenho. Na verdade, a maioria dos algoritmos baseados em árvores, incluindo Random Forest e Decision Trees, são insensíveis à escala dos recursos.
-Obs. 2: O f_classif é um método de feature selection que é adequado quando os dados são numéricos e a variável alvo é categórica.
-Obs. 2: Em casos onde há um relacionamento não-linear, a matriz pode não ser uma boa medida.
+
 
 
 
