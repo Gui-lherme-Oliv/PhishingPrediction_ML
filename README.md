@@ -21,7 +21,7 @@ Foi escolhido o método SelectKBest que seleciona as melhores "K" features com b
 Foi definido 80% para treinamento e 20% para teste.
 
 ## 3. Escolha do algoritmo e Treinamento do modelo
-Para esse problema de classificação foi escolhido o Random Forest. Não foi necessário aplicar um método de padronização (normalização/escalonamento) aos atributos. A maioria dos algoritmos baseados em árvores são invariantes à escala das features, o que significa que a mudança na escala das features não afeta seu desempenho. 
+Para esse problema de classificação foi escolhido o algoritmo Random Forest. Não foi necessário aplicar um método de padronização (normalização/escalonamento) aos atributos. A maioria dos algoritmos baseados em árvores são invariantes à escala das features, o que significa que a mudança na escala das features não afeta seu desempenho. 
 
 ## 4. Avaliação do desempenho
 Foram utilizadas as seguintes métricas de avaliação de desempenho[^1] :
@@ -34,7 +34,7 @@ Foram utilizadas as seguintes métricas de avaliação de desempenho[^1] :
 [^1]: Referência: FILHO, Mario. **As Métricas Mais Populares para Avaliar Modelos de Machine Learning**. 2018. Disponível em: https://mariofilho.com/as-metricas-mais-populares-para-avaliar-modelos-de-machine-learning/
 
 ## 5. Learning Curve
-Foi gerada uma learning curve para detectar overfitting ou underfitting e avaliar a necessidade de mais dados.
+Foi gerada uma learning curve (curva de aprendizado) para detectar overfitting ou underfitting e avaliar a necessidade de mais dados.
 
 ## 6. Resultados
 ### 6.1. Métricas de avaliação
@@ -46,9 +46,9 @@ A partir desses valores pode-se chegar às seguintes conclusões:
 -  F1-Score: Um valor de 0.98 indica um ótimo equilíbrio entre precisão e revocação.
 -  Accuracy: Um valor de 0.98 indica que o modelo é altamente preciso em sua classificação global.
 
-Com esses resultados satisfatórios não será necessário realizar o ajuste de hiperparâmetros nem de testar algum outro algoritmo de machine learning.
+Com esses resultados satisfatórios foi decidido que não será necessário realizar o ajuste dos hiperparâmetros nem de testar algum outro algoritmo de machine learning.
 
 ### 6.2. Learning Curve
 ![RF_lc](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/ac062ffb-b9ec-43be-abc2-3485e20aaf73)
 
-A partir do gráfico pode-se observar que o training score permanece alto independentemente do tamanho do conjunto de treinamento. Por outro lado, o cross-validation score aumenta com o tamanho do conjunto de dados de treinamento. Na verdade, aumenta até um ponto em que atinge um patamar. Observar tal patamar é uma indicação de que pode não ser útil adquirir novos dados para treinar o modelo, uma vez que o desempenho do modelo não aumentará mais
+A partir do gráfico pode-se observar que o training score permanece alto independentemente do tamanho do conjunto de treinamento. Por outro lado, o cross-validation score aumenta com o tamanho do conjunto de dados de treinamento. Na verdade, aumenta até um ponto em que atinge um patamar. Observar tal patamar é uma indicação de que pode não ser útil adquirir novos dados para treinar o modelo, uma vez que o desempenho do modelo não aumentará mais.
