@@ -40,16 +40,19 @@ Foi gerada uma learning curve para detectar overfitting ou underfitting e avalia
 ## Resultados
 ### Métricas de avaliação
 ![RF_result](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/ed8f3821-f604-49f6-9a9a-41bcf00116a5)
+
 A partir desses valores pode-se chegar às seguintes conclusões:
 -  Precision: Um valor de 0.98 indica que o modelo raramente faz falsos positivos, ou seja, quando ele prevê uma classe como positiva, é altamente provável que seja realmente positiva.
 -  Recall: Um valor de 0.98 indica que o modelo captura quase todos os exemplos positivos e tem um desempenho excelente em identificar a classe positiva.
 -  F1-Score: Um valor de 0.98 indica um ótimo equilíbrio entre precisão e revocação.
 -  Accuracy: Um valor de 0.98 indica que o modelo é altamente preciso em sua classificação global.
-Logo não será necessário realizar o ajuste de hiperparâmetros nem de testar algum outro algoritmo de machine learning.
+
+Com esses resultados satisfatórios não será necessário realizar o ajuste de hiperparâmetros nem de testar algum outro algoritmo de machine learning.
 
 ### Learning Curve
 ![RF_lc](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/ac062ffb-b9ec-43be-abc2-3485e20aaf73)
-A partir do gráfico pode-se observar que 
+
+A partir do gráfico pode-se observar que o training score permanece alto independentemente do tamanho do conjunto de treinamento. Por outro lado, o cross-validation score aumenta com o tamanho do conjunto de dados de treinamento. Na verdade, aumenta até um ponto em que atinge um patamar. Observar tal patamar é uma indicação de que pode não ser útil adquirir novos dados para treinar o modelo, uma vez que o desempenho do modelo não aumentará mais
 
 
 
