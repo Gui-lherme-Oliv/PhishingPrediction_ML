@@ -23,6 +23,8 @@ Foram utilizados e comparados dois algoritmos: **Random Forest** e **Decision Tr
 
 Referência: FILHO, Mario. **As Métricas Mais Populares para Avaliar Modelos de Machine Learning**. 2018. Disponível em: https://mariofilho.com/as-metricas-mais-populares-para-avaliar-modelos-de-machine-learning/
 
+Obs.: Para Random Forest e Decision Trees, geralmente, não é necessário aplicar um método de padronização (normalização/escalonamento) aos recursos. Ambos os algoritmos são invariantes à escala dos recursos, o que significa que a mudança na escala dos atributos não afeta seu desempenho. Na verdade, a maioria dos algoritmos baseados em árvores, incluindo Random Forest e Decision Trees, são insensíveis à escala dos recursos.
+
 ## Algoritmo Random Forest
 Foram realizadas as seguintes etapas:
 1. **Matriz de correlação:** Inicialmente foi gerada uma matriz de correlação para verificar a correlação das features com a classe target.
