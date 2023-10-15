@@ -53,15 +53,3 @@ Com esses resultados satisfatórios não será necessário realizar o ajuste de 
 ![RF_lc](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/ac062ffb-b9ec-43be-abc2-3485e20aaf73)
 
 A partir do gráfico pode-se observar que o training score permanece alto independentemente do tamanho do conjunto de treinamento. Por outro lado, o cross-validation score aumenta com o tamanho do conjunto de dados de treinamento. Na verdade, aumenta até um ponto em que atinge um patamar. Observar tal patamar é uma indicação de que pode não ser útil adquirir novos dados para treinar o modelo, uma vez que o desempenho do modelo não aumentará mais
-
-
-
-
-
-
-
-
-
-
-
-Uso do Learning Curve/ Analise under/overfiting: verificada o learning curve a partir do f1_score, não foi verificado overfitting no teste.
