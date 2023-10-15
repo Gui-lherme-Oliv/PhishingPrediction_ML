@@ -9,7 +9,7 @@ Conforme sua descrição no Kaggle, este conjunto de dados contém 48 features (
 ## 2. Preparação dos dados
 Foi verificado o seguinte: 
 - Todas as features do dataset são do tipo numérico, não houve necessidade de utilizar técnicas como get dummies ou one-hot-encoding.
-- Esse dataset não possui valores nulos ou erros, não será necessária a etapa de limpeza dos dados.
+- Esse dataset não possui valores nulos ou erros, não foi necessária a etapa de limpeza dos dados.
 - A classe target (variável alvo) é definida pela feature CLASS_LABEL, que assume valor 1 em caso de phishing e 0 caso contrário.
 - Como o objetivo é identificar se é phishing ou não, a métrica de avaliação se dará por classificação.
 - O dataset está bastante balanceado: 50% das observações do tipo phishing e 50% do tipo legítimo.
