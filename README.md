@@ -34,10 +34,12 @@ Foram utilizadas as seguintes métricas de avaliação de desempenho:
 
 Referência: FILHO, Mario. **As Métricas Mais Populares para Avaliar Modelos de Machine Learning**. 2018. Disponível em: https://mariofilho.com/as-metricas-mais-populares-para-avaliar-modelos-de-machine-learning/
 
-### 5. Learning Curve
+## 5. Learning Curve
 Foi gerada uma learning curve para detectar overfitting ou underfitting e avaliar a necessidade de mais dados.
 
 ## Resultados
+### Métricas de avaliação
+![RF_result](https://github.com/Gui-lherme-Oliv/PhishingPrediction_ML/assets/123426025/ed8f3821-f604-49f6-9a9a-41bcf00116a5)
 
 
 
